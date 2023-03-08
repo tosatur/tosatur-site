@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>tosatur.com</title>
+  <link>https://tosatur.com</link>
+  <description>#######'s web area</description>
+  <item>
+    <title>RSS Tutorial</title>
+    <link>https://tosatur.com/notes/journeytoikea.html</link>
+    <description>a transcendental journey</description>
+  </item>
+  <item>
+    <title>on herbal medicine</title>
+    <link>https://tosatur.com/notes/herbalmedicine.html</link>
+    <description>my thoughts on herbal medicine</description>
+  </item>
+</channel>
+
+
+</rss>
