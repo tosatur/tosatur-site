@@ -2,11 +2,13 @@
 <rss version="2.0">
 
 <channel>
+  <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  <language>en-us</language>
   <title>tosatur.com</title>
   <link>https://tosatur.com</link>
-  <description>#######'s web area</description>
+  <description>tosatur's web area</description>
   <item>
-    <title>RSS Tutorial</title>
+    <title>journey to ikea</title>
     <link>https://tosatur.com/notes/journeytoikea.html</link>
     <description>a transcendental journey</description>
   </item>
