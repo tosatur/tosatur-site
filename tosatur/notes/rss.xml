@@ -3,20 +3,26 @@
 
 <channel>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  <lastbuilddate>2023-03-11</lastbuilddate>
   <language>en-us</language>
   <title>tosatur.com</title>
   <link>https://tosatur.com</link>
   <description>tosatur's web area</description>
+
   <item>
     <title>journey to ikea</title>
     <link>https://tosatur.com/notes/journeytoikea.html</link>
     <description>a transcendental journey</description>
+    <pubDate>2023-01-05</pubDate>
   </item>
+
   <item>
     <title>on herbal medicine</title>
     <link>https://tosatur.com/notes/onherbalmedicine.html</link>
     <description>my thoughts on herbal medicine</description>
+    <pubDate>2023-01-02</pubDate>
   </item>
+  
 </channel>
 
 
