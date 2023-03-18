@@ -10,6 +10,13 @@
     <description>tosatur's web area</description>
 
     <item>
+      <title>insidious files</title>
+      <link>https://tosatur.com/notes/insidiousfiles.html</link>
+      <description>however, firefox's network tool showed me that my favicon was adding a whopping 100kb to every page!</description>
+      <pubDate>2023-03-19</pubDate>
+    </item>
+
+    <item>
       <title>pool topology</title>
       <link>https://tosatur.com/notes/pooltopology.html</link>
       <description>i like swimming a lot; so when choosing a hotel, the pool is a pretty significant factor for me. how big is it? is it indoors or outdoors? how deep is it? what is its shape?</description>
