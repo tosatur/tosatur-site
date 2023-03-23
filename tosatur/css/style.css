@@ -1,19 +1,19 @@
 body {
     background-color: #111;
-    font-family: 'Consolas';
+    font-family: 'consolas';
     margin: 0px;
-    color: #818181;
+    color: #a1a1a1;
 }
 
 a {
     text-decoration: underline;
-    color: #818181;
+    color: #a1a1a1;
     font-size: 20px;
 }
 
 .sidenav a, .sidenav h1 {
     text-decoration: none;
-    color: #818181;
+    color: #a1a1a1;
     padding: 6px 8px 6px 16px;
     display: block;
 }
