@@ -56,3 +56,7 @@ h2 {
 li {
     font-size: 1.25rem;
 }
+blockquote {
+    border-left: 3px solid #a1a1a1;
+    padding-left: 10px;
+}
