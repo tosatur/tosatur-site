@@ -10,6 +10,13 @@
     <description>tosatur's web area</description>
 
     <item>
+      <title>my philosophy behind this site</title>
+      <link>https://tosatur.com/notes/philosophy.html</link>
+      <description>i'm pretty tired of websites having a 1-10 megabyte file size per page, 90% of which is unneeded javascript libraries or giant, uncompressed images.</description>
+      <pubDate>2023-03-26</pubDate>
+    </item>
+
+    <item>
       <title>insidious files</title>
       <link>https://tosatur.com/notes/insidiousfiles.html</link>
       <description>however, firefox's network tool showed me that my favicon was adding a whopping 100kb to every page!</description>
