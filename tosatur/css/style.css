@@ -107,6 +107,7 @@
 
     li {
         font-size: 1.25rem;
+        margin-bottom: 5px;
     }
     blockquote {
         border-left: 3px solid #a1a1a1;
