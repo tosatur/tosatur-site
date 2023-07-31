@@ -28,6 +28,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+            font-family: 'consolas';
         }
         button:hover {
             text-decoration: underline;
@@ -35,7 +36,7 @@
     </style>
 </head>
     <body>
-        <h2>big beautiful temporary password generator</h2>
+        <h2>big beautiful temporary password generator (bbtpg)</h2>
 
         <h3>your new temporary password is:</h3>
         <h1 id="password">password12345</h1>
@@ -46,9 +47,9 @@
 
         <script>
 
-        var consonants = "bcdfghjklmnpqrstvwxyz";
-        var vowels = "aeiou";
-        var numbers = "12345678";
+        var consonants = "bcdfghjklmnprstvwyz";
+        var vowels = "aeio";
+        var numbers = "12345";
         var symbols = "@!";
 
         function rcfs(string) {
@@ -59,12 +60,28 @@
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
 
+        String.prototype.replaceAt = function(index, replacement) {
+            return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+        }
+
         var checkbox = document.getElementById("symbolscheckbox");
         
         function getpassword() {
             number1 = rcfs(numbers);
             number2 = parseInt(number1) + 1
+
             number3 = rcfs(numbers);
+            if (number3 == number1) {
+                number3 = parseInt(number3) + 2
+            } else if (number3 == number2) {
+                number3 = parseInt(number3) + 1
+            }
+            
+            if (parseInt(number3) - 1 == parseInt(number2)) {
+                number3 = parseInt(number3) + 1
+                console.log("yep!")
+            }
+
             number4 = parseInt(number3) + 1
 
             if (checkbox.checked == true) {
@@ -72,6 +89,17 @@
             } else {
                 password = capitalize(rcfs(consonants)) + rcfs(vowels) + rcfs(consonants) + rcfs(vowels) + number1 + number2 + number3 + number4;
             }
+
+            if (password[3] == password[1]) {
+                password = password.replaceAt(3, "u");
+            }
+
+            if (password.slice(-2) == "10") {
+                console.log("yep its 10");
+                password = password.replaceAt(7, "");
+                console.log(password);
+            }
+
 
             document.getElementById("password").innerHTML = password;
 
