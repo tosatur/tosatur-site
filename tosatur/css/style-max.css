@@ -81,6 +81,10 @@ h2 {
         width: 80ch;
     }
 
+    .main h1 { 
+        padding-top: 4px;
+    }
+
     p {
         font-size: 1.25rem;
         margin-bottom: 25px;
