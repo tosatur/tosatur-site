@@ -1,0 +1,111 @@
+body {
+    background-color: #111;
+    font-family: 'consolas';
+    color: #a1a1a1;
+    padding: 6px 8px 6px 16px;
+}
+
+.sidenav {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sidenav a {
+    text-decoration: none;
+    padding: 6px 8px 6px 16px;
+    color: inherit;
+    display: block;
+}
+
+a {
+    text-decoration: underline;
+    color: #a1a1a1;
+    font-size: 2.5rem;
+}
+
+a:hover {
+    color: #f1f1f1;
+}
+
+h1 {
+    font-size: 3.126rem;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+@media only screen and (orientation: portrait) {
+    p, li, date, blockquote {
+        font-size: 2.5rem;
+    }
+
+    blockquote {
+        border-left: 6px solid #a1a1a1;
+        padding-left: 1rem;
+    }
+
+    .sidenav a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        margin: 0;
+    }
+    
+    a {
+        font-size: 20px;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    .sidenav h1 {
+        padding: 6px 8px 6px 16px;
+    }
+
+    .main {
+        margin-left: 160px;
+        padding: 0 8px 6px 16px;
+        width: 80ch;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 1.563rem;
+    }
+
+    h2 {
+        font-size: 1.375rem;
+    }
+
+    blockquote {
+        border-left: 3px solid #a1a1a1;
+        padding-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    li {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+
+    date {
+        font-size: 1.25rem;
+    }
+}
