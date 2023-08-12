@@ -1,6 +1,6 @@
 body {
     background-color: #080808;
-    font-family: 'consolas';
+    font-family: 'courier';
     color: #a1a1a1;
     padding: 6px 8px 6px 16px;
 }
@@ -34,6 +34,14 @@ h1 {
 
 h2 {
     font-size: 2.75rem;
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (orientation: portrait) {
