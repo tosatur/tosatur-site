@@ -1,3 +1,5 @@
 # tosatur.com
 
-the personal website of tosatur.
+source code of tosatur.com
+
+hosted on firebase
