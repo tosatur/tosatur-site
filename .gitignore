@@ -68,6 +68,7 @@ node_modules/
 # image compression batch script
 compress.bat
 
+# conlang word file
 word
 
 # firebase files
