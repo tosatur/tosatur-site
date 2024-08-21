@@ -19,7 +19,7 @@ jobs:
       uses: amireshoon/minifyAction@main
       with:
         repo: $prepo
-    - name: Running Tests
+    - name: Running minify script
       run: |
         minifier.sh $prepo
     - name: Commiting changes

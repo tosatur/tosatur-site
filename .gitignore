@@ -70,7 +70,3 @@ compress.bat
 
 # conlang word file
 word
-
-# firebase files
-firebase.json
-.firebaserc
