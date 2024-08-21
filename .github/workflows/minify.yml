@@ -1,3 +1,7 @@
+name: minify
+
+on: [push, pull_request]
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}
@@ -14,16 +18,17 @@ jobs:
       uses: amireshoon/minifyAction@main
       with:
         repo: $prepo
-    - name: Minifying Codes
+    - name: Running Tests
       run: |
         minifier.sh $prepo
-    - name: Pushing to production branch
+    - name: Commiting changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
-        branch: production
+        branch: minified
         message: Minified css, js and html
         author_name: MinifyAction[bot]
         author_email: amireshoon-minifyAction@users.noreply.github.com
         force: true
+    name: Minify
