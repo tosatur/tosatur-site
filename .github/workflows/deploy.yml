@@ -4,7 +4,7 @@ on:
       - master
 
 jobs:
-    test:
+  test:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -32,7 +32,6 @@ jobs:
         author_name: MinifyAction[bot]
         author_email: amireshoon-minifyAction@users.noreply.github.com
         force: true
-    name: Minify
   deploy:
     name: Deploy
     needs: job1
