@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Minify Css Js and Html files in GitHub Action
         uses: amireshoon/minifyAction@v1.1
+        with:
+          repo: ${{github.repository}}
+          branch: minified
   job2:
     needs: job1
     runs-on: ubuntu-latest
