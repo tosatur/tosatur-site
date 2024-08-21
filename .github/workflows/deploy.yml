@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Minify Css Js and Html files in GitHub Action
+        uses: amireshoon/minifyAction@v1.1
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Firebase Deployment
+        uses: sws2apps/firebase-deployment@v3.6.0
+        with:
+          args: deploy --only hosting
+          token: ${{ secrets.FIREBASE_TOKEN }}
+          hosting: true
+          project: tosatur-e21be
+            
+            
