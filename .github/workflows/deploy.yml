@@ -15,11 +15,11 @@ jobs:
       prepo: ${{github.repository}}
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Minify Actions
+    - name: Set up minify action
       uses: amireshoon/minifyAction@main
       with:
         repo: $prepo
-    - name: Running minify script
+    - name: Run minify script
       run: |
         minifier.sh $prepo
     - name: Commiting changes
@@ -37,10 +37,9 @@ jobs:
     needs: minify
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Firebase Hosting - With pin Firebase-tools version
-        uses: AurelienLoyer/action-hosting-deploy@v0
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: tosatur-e21be
           repoToken: "${{secrets.GITHUB_TOKEN}}"
-
