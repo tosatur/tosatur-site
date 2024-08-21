@@ -4,15 +4,38 @@ on:
       - master
 
 jobs:
-  job1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Minify Css Js and Html files in GitHub Action
-        uses: amireshoon/minifyAction@v1.1
-        with:
-          repo: ${{github.repository}}
-          branch: minified
-  job2:
+  minify:
+    env:
+      prepo: ${{github.repository}}
+    jobs:
+      job1:
+        name: Setup minify script
+        runs-on: ubuntu-latest
+        steps:
+          - name: Minify Css Js and Html files in GitHub Action
+            uses: amireshoon/minifyAction@v1.1
+      job2:
+        name: Run minify script
+        runs-on: ubuntu-latest
+        steps:
+          - name: Running Tests
+            run: |
+              minifier.sh $prepo
+      job3:
+        name: Commit changes
+        runs-on: ubuntu-latest
+        steps:
+          - name: Commit changes
+            uses: actions-js/push@master
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              directory: github/workspace
+              branch: minified
+              message: Minified css, js and html
+              author_name: MinifyAction[bot]
+              author_email: amireshoon-minifyAction@users.noreply.github.com
+  deploy:
+    name: Deploy
     needs: job1
     runs-on: ubuntu-latest
     steps:
@@ -23,5 +46,3 @@ jobs:
           token: ${{ secrets.FIREBASE_TOKEN }}
           hosting: true
           project: tosatur-e21be
-            
-            
