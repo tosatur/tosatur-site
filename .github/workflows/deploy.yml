@@ -37,10 +37,10 @@ jobs:
     needs: minify
     runs-on: ubuntu-latest
     steps:
-      - name: Firebase Deployment
-        uses: sws2apps/firebase-deployment@v3.6.0
+      - name: Deploy to Firebase Hosting - With pin Firebase-tools version
+        uses: AurelienLoyer/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting
-          token: ${{ secrets.FIREBASE_TOKEN }}
-          hosting: true
-          project: tosatur-e21be
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: tosatur-e21be
+          repoToken: "${{secrets.GITHUB_TOKEN}}"
+
