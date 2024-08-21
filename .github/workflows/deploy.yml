@@ -4,36 +4,35 @@ on:
       - master
 
 jobs:
-  minify:
+    test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04]
     env:
       prepo: ${{github.repository}}
-    jobs:
-      job1:
-        name: Setup minify script
-        runs-on: ubuntu-latest
-        steps:
-          - name: Minify Css Js and Html files in GitHub Action
-            uses: amireshoon/minifyAction@v1.1
-      job2:
-        name: Run minify script
-        runs-on: ubuntu-latest
-        steps:
-          - name: Running Tests
-            run: |
-              minifier.sh $prepo
-      job3:
-        name: Commit changes
-        runs-on: ubuntu-latest
-        steps:
-          - name: Commit changes
-            uses: actions-js/push@master
-            with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              directory: github/workspace
-              branch: minified
-              message: Minified css, js and html
-              author_name: MinifyAction[bot]
-              author_email: amireshoon-minifyAction@users.noreply.github.com
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Minify Actions
+      uses: amireshoon/minifyAction@main
+      with:
+        repo: $prepo
+    - name: Running Tests
+      run: |
+        minifier.sh $prepo
+    - name: Commiting changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        directory: github/workspace
+        branch: minified
+        message: Minified css, js and html
+        author_name: MinifyAction[bot]
+        author_email: amireshoon-minifyAction@users.noreply.github.com
+        force: true
+    name: Minify
   deploy:
     name: Deploy
     needs: job1
