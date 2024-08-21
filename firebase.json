@@ -2,7 +2,6 @@
   "hosting": {
     "public": "tosatur",
     "ignore": [
-      "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
