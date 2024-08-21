@@ -4,9 +4,9 @@ on:
       - master
 
 jobs:
-  test:
+  minify:
     runs-on: ${{ matrix.os }}
-
+    name: Minify
     strategy:
       fail-fast: false
       matrix:
@@ -34,7 +34,7 @@ jobs:
         force: true
   deploy:
     name: Deploy
-    needs: job1
+    needs: minify
     runs-on: ubuntu-latest
     steps:
       - name: Firebase Deployment
