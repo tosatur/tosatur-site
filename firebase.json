@@ -2,8 +2,6 @@
   "hosting": {
     "public": "tosatur",
     "ignore": [
-      "**/.*",
-      "**/node_modules/**"
     ]
   }
 }
