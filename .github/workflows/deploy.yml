@@ -37,6 +37,12 @@ jobs:
     needs: minify
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}
+          ref: minified
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
