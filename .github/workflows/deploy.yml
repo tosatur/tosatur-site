@@ -45,6 +45,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
+        on:
+          push:
+            branches:
+              - minified
         with:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TOSATUR_E21BE }}
           projectId: tosatur-e21be
