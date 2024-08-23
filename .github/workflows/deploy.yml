@@ -1,40 +1,11 @@
 on:
   push:
     branches:
-      - master
+      - minified
 
 jobs:
-  minify:
-    runs-on: ${{ matrix.os }}
-    name: Minify
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-20.04]
-    env:
-      prepo: ${{github.repository}}
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up minify action
-      uses: amireshoon/minifyAction@main
-      with:
-        repo: $prepo
-    - name: Run minify script
-      run: |
-        minifier.sh $prepo
-    - name: Commiting changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        directory: github/workspace
-        branch: minified
-        message: Minified css, js and html
-        author_name: MinifyAction[bot]
-        author_email: amireshoon-minifyAction@users.noreply.github.com
-        force: true
   deploy:
     name: Deploy
-    needs: minify
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,10 +16,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
-        on:
-          push:
-            branches:
-              - minified
         with:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TOSATUR_E21BE }}
           projectId: tosatur-e21be
