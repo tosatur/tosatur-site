@@ -1,122 +1,144 @@
 body {
-    background-color: #080808;
-    font-family: monospace;
-    color: #a1a1a1;
-    padding: 6px 8px 6px 16px;
-}
-
-.sidenav {
-    position: relative;
+    background-image: url(jungle-blurred.jpg);
+    background-repeat: fill;
+    background-size: cover;
+    height: 100%;
     width: 100%;
-    height: auto;
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.sidenav a {
-    text-decoration: none;
-    padding: 6px 8px 6px 16px;
-    color: inherit;
-    display: block;
-}
-
-a {
-    text-decoration: underline;
+#main-container {
+    height: 85%;
+    width: 90%;
+    background-color: black;
     color: #a1a1a1;
-    font-size: 2.5rem;
+    margin: auto;
+    border: 1px solid #a1a1a1;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+    line-height: 2em;
 }
 
-a:hover {
-    color: #f1f1f1;
+#topbar {
+    border-bottom: 3px double #a1a1a1;
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.topbar-container {
+    display: inline-block;
+    border-left: 1px solid #a1a1a1;
+    border-right: 1px solid #a1a1a1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.xxiivv {
+    float: right;
+}
+
+#content-container {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #a1a1a1 transparent;
+}
+
+#content {
+    padding-bottom: 20%;
+}
+
+p {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 h1 {
-    font-size: 3.126rem;
+    background-color: #a1a1a1;
+    color: black;
+    font-size: 24px;
+    font-weight: 100;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    border-bottom: 6px double black;
+}
+
+h1::before {
+    content: ">> ";
+}
+
+h1::after {
+    content: "";
 }
 
 h2 {
-    font-size: 2.75rem;
+    background-color: #a1a1a1;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 10px;
 }
 
-.main img {
-    max-width: 130%;
+h2::before {
+    content: "#";
+    padding-right: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+a.navlink {
+    text-decoration: none;
+    color: #a1a1a1;
+}
+
+a.navlink:hover {
+    color: black;
+    background-color: #a1a1a1;
+}
+
+a.webring:hover {
+    text-decoration: none;
+    color: #a1a1a1;
+    background-color: black;
+}
+
+a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: lightgreen;
+}
+
+blockquote {
+    padding: 10px;
+    border: 1px solid #a1a1a1;
+}
+
+.img-wide {
+    width: 100%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media only screen and (orientation: portrait) {
-    p, li, date, blockquote {
-        font-size: 2.5rem;
-    }
-
-    blockquote {
-        border-left: 6px solid #a1a1a1;
-        padding-left: 1rem;
-    }
-
-    .sidenav a {
-        display: inline-block;
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    body {
-        margin: 0;
-    }
-    
-    a {
-        font-size: 20px;
-    }
-
-    .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        z-index: 1;
-    }
-
-    .sidenav h1 {
-        padding: 6px 8px 6px 16px;
-    }
-
-    .main {
-        margin-left: 160px;
-        padding: 0 8px 6px 16px;
-        width: 80ch;
-    }
-
-    .main h1 { 
-        padding-top: 4px;
-    }
-
-    p {
-        font-size: 1.25rem;
-        margin-bottom: 25px;
-    }
-
-    h1 {
-        font-size: 1.563rem;
-    }
-
-    h2 {
-        font-size: 1.375rem;
-    }
-
-    blockquote {
-        border-left: 3px solid #a1a1a1;
-        padding-left: 1rem;
-        font-size: 1.25rem;
-    }
-
-    li {
-        font-size: 1.25rem;
-        margin-bottom: 5px;
-    }
-
-    date {
-        font-size: 1.25rem;
-    }
 }
