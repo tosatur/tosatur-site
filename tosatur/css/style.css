@@ -34,13 +34,24 @@ body {
 .topbar-container {
     display: inline-block;
     border-left: 1px solid #a1a1a1;
-    border-right: 1px solid #a1a1a1;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.xxiivv {
+.topbar-rightmost {
+    border-right: 1px solid #a1a1a1;
+}
+
+.webring {
     float: right;
+}
+
+.webring:hover {
+    background-color: #a1a1a1 !important;
+}
+
+.webring:hover img {
+    filter: invert(100%) brightness(0%);
 }
 
 #content-container {
@@ -68,15 +79,11 @@ h1 {
     font-size: 24px;
     font-weight: 100;
     padding-left: 10px;
-    border-bottom: 6px double black;
+    border-bottom: 8px double black;
 }
 
 h1::before {
     content: ">> ";
-}
-
-h1::after {
-    content: "";
 }
 
 h2 {
@@ -101,6 +108,7 @@ h3 {
 a.navlink {
     text-decoration: none;
     color: #a1a1a1;
+    display: inline-block;
 }
 
 a.navlink:hover {
