@@ -140,6 +140,7 @@ blockquote {
 .img-wide {
     width: 100%;
     height: auto;
+    image-rendering: pixelated;
 }
 
 ul {
