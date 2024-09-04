@@ -2,7 +2,7 @@ body {
     background-image: url(jungle-blurred.jpg);
     background-repeat: fill;
     background-size: cover;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(100px);
     height: 100%;
     width: 100%;
     margin: 0;
