@@ -141,9 +141,13 @@ blockquote {
 .img-wide {
     width: 100%;
     height: auto;
-    image-rendering: pixelated;
 }
 
 ul {
     list-style-type: square;
+}
+
+img {
+    border: 1px solid #d7d7d7;
+    image-rendering: pixelated;
 }
