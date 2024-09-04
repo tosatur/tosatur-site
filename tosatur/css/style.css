@@ -2,6 +2,7 @@ body {
     background-image: url(jungle-blurred.jpg);
     background-repeat: fill;
     background-size: cover;
+    backdrop-filter: blur(1px);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -15,9 +16,9 @@ body {
     height: 90%;
     width: 90%;
     background-color: black;
-    color: #a1a1a1;
+    color: #d7d7d7;
     margin: auto;
-    border: 1px solid #a1a1a1;
+    border: 1px solid #d7d7d7;
     margin: 0 auto;
     overflow: hidden;
     max-width: 1200px;
@@ -25,7 +26,7 @@ body {
 }
 
 #topbar {
-    border-bottom: 3px double #a1a1a1;
+    border-bottom: 3px double #d7d7d7;
     padding: 10px;
     padding-left: 20%;
     padding-right: 20%;
@@ -33,13 +34,13 @@ body {
 
 .topbar-container {
     display: inline-block;
-    border-left: 1px solid #a1a1a1;
+    border-left: 1px solid #d7d7d7;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .topbar-rightmost {
-    border-right: 1px solid #a1a1a1;
+    border-right: 1px solid #d7d7d7;
 }
 
 .webring {
@@ -47,7 +48,7 @@ body {
 }
 
 .webring:hover {
-    background-color: #a1a1a1 !important;
+    background-color: #d7d7d7 !important;
 }
 
 .webring:hover img {
@@ -62,7 +63,7 @@ body {
     padding-right: 20%;
     font-size: 16px;
     scrollbar-width: thin;
-    scrollbar-color: #a1a1a1 transparent;
+    scrollbar-color: #d7d7d7 transparent;
 }
 
 #content {
@@ -74,7 +75,7 @@ p {
 }
 
 h1 {
-    background-color: #a1a1a1;
+    background-color: #d7d7d7;
     color: black;
     font-size: 24px;
     font-weight: 100;
@@ -87,7 +88,7 @@ h1::before {
 }
 
 h2 {
-    background-color: #a1a1a1;
+    background-color: #d7d7d7;
     color: black;
     font-size: 20px;
     font-weight: 100;
@@ -107,18 +108,18 @@ h3 {
 
 a.navlink {
     text-decoration: none;
-    color: #a1a1a1;
+    color: #d7d7d7;
     display: inline-block;
 }
 
 a.navlink:hover {
     color: black;
-    background-color: #a1a1a1;
+    background-color: #d7d7d7;
 }
 
 a.webring:hover {
     text-decoration: none;
-    color: #a1a1a1;
+    color: #d7d7d7;
     background-color: black;
 }
 
@@ -134,7 +135,7 @@ a:hover {
 
 blockquote {
     padding: 10px;
-    border: 1px solid #a1a1a1;
+    border: 1px solid #d7d7d7;
 }
 
 .img-wide {
