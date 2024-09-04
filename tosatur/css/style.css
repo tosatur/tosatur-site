@@ -1,8 +1,8 @@
 body {
-    background-image: url(jungle-blurred.jpg);
+    background-image: url(jungle-tiny.webp);
     background-repeat: fill;
     background-size: cover;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     margin: 0;
