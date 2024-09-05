@@ -82,6 +82,7 @@ h1 {
     font-weight: 100;
     padding-left: 10px;
     border-bottom: 8px double black;
+    text-transform: uppercase;
 }
 
 h1::before {
