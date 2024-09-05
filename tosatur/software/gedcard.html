@@ -1,45 +1,30 @@
-<!doctype html>
-<html lang="en">
+<html>
     <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>gedcard</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>tosatur/Gedcard</title>
         <link rel="icon" type="image/x-icon" href="/images/logo-small.webp">
         <base href="https://tosatur.com/" target="_top">
     </head>
     <body>
-
-            <section class="sidenav">
-                <h1>tosatur</h1>
-                <a href="index.html">home</a>
-                <a href="now/index.html">now</a>
-                <a href="notes/index.html">notes</a>
-                <a href="music/index.html">music</a>
-                <a href="games/index.html">games</a>
-                <a href="languages/index.html">languages</a>
-                <a href="photography/index.html">photography</a>
-                <a href="misc/index.html">misc</a>
-                <a href="contact/index.html">contact</a>  
-
-            <a href="https://webring.xxiivv.com/#tosatur" target="_top" rel="noopener">
-                <img src="images/icon.white.svg" alt="xxiivv webring" height=40px>
-            </a>
-        </section>
-
-        <div class="main">
-
-            <h1>gedcard</h1>
+        <div id="main-container">
+            <div id="topbar">
+                <a class="navlink" href="javascript:history.back()"><div class="topbar-container">❮</div></a><a class="navlink" href="index.html"><div class="topbar-container">tosatur.com</div></a><div class="topbar-container topbar-rightmost">updated 2024-09-03</div><a class="navlink webring" href="https://webring.xxiivv.com/#tosatur"><div class="topbar-container topbar-rightmost"><img src="images/icon.white.svg" alt="xxiivv webring" height=25px></div></a>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h1>GEDCARD</h1>
             
-            <p>gedcard is a python script that converts a gedcom (.ged) file to a list of contacts in a vcard (.vcf) file.</p>
-
-            <p>it took me about an hour to write.</p>
-
-            <p>there are flags for including the gender in the vcard, and including deceased people.</p>
-
-            <p>i will expand this to include support for <a href="https://datatracker.ietf.org/doc/draft-ietf-jmap-jscontact/">jscontact</a> and <a href="https://datatracker.ietf.org/doc/rfc6351/">xcard</a>.</p>
-
-            <p><a href="https://github.com/tosatur/gedcard">github</a></p>
-
+                    <p>Gedcard is a Python script that converts a GEDCOM (.ged) file to a list of contacts in a vCard (.vcf) file.</p>
+                    
+                    <p>It took me about an hour to write.</p>
+                    
+                    <p>There are flags for including the gender in the vCard, and including deceased people.</p>
+                    
+                    <p>I will (not) expand this to include support for <a href="https://datatracker.ietf.org/doc/draft-ietf-jmap-jscontact/">JSContact</a> and <a href="https://datatracker.ietf.org/doc/rfc6351/">xCard</a>.</p>
+                    
+                    <p><a href="https://github.com/tosatur/gedcard">Github</a></p>
+                </div>
+            </div>
         </div>
-
     </body>
 </html>
