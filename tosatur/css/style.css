@@ -19,10 +19,11 @@ body {
     color: #d7d7d7;
     margin: auto;
     border: 1px solid #d7d7d7;
-    margin: 0 auto;
     overflow: hidden;
     max-width: 1200px;
+    min-width: 550px;
     line-height: 2em;
+    box-shadow: 30px 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 #topbar {
