@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+  <channel>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <lastbuilddate>2023-03-26</lastbuilddate>
+    <language>en-us</language>
+    <title>tosatur.com</title>
+    <link>https://tosatur.com</link>
+    <description>tosatur's web area</description>
+
+    <item>
+      <title>Linguistic misconceptions</title>
+      <link>https://tosatur.com/writing/linguistic-misconceptions.html</link>
+      <description>Here are a few common misconceptions about languages.</description>
+      <pubDate>2023-08-11</pubDate>
+    </item>
+
+    <item>
+      <title>Fountains</title>
+      <link>https://tosatur.com/writing/fountains.html</link>
+      <description>I think fountains are really nice. They improve the overall vibe of a public space by at least 80%.</description>
+      <pubDate>2023-03-26</pubDate>
+    </item>
+
+    <item>
+      <title>Insidious files</title>
+      <link>https://tosatur.com/writing/insidiousfiles.html</link>
+      <description>However, firefox's network tool showed me that my favicon was adding a whopping 100kb to every page!</description>
+      <pubDate>2023-03-19</pubDate>
+    </item>
+
+    <item>
+      <title>Pool topology</title>
+      <link>https://tosatur.com/writing/pooltopology.html</link>
+      <description>I like swimming a lot; so when choosing a hotel, the pool is a pretty significant factor for me. How big is it? Is it indoors or outdoors? How deep is it? What is its shape?</description>
+      <pubDate>2023-03-16</pubDate>
+    </item>
+
+    <item>
+      <title>The tower</title>
+      <link>https://tosatur.com/writing/thetower.html</link>
+      <description>Hesitating a little, i ventured within via the main entrance.</description>
+      <pubDate>2023-03-13</pubDate>
+    </item>
+
+    <item>
+      <title>Making myself anonymous, or, how to remove data from Radaris</title>
+      <link>https://tosatur.com/writing/radaris.html</link>
+      <description>Moral of the story is, don't use the internet, and fuck Radaris.</description>
+      <pubDate>2023-03-12</pubDate>
+    </item>
+
+    <item>
+      <title>Journey to IKEA</title>
+      <link>https://tosatur.com/writing/journeytoikea.html</link>
+      <description>A transcendental journey</description>
+      <pubDate>2023-01-05</pubDate>
+    </item>
+
+    <item>
+      <title>on herbal medicine</title>
+      <link>https://tosatur.com/writing/onherbalmedicine.html</link>
+      <description>My thoughts on herbal medicine</description>
+      <pubDate>2023-01-02</pubDate>
+    </item>
+    
+  </channel>
+</rss>

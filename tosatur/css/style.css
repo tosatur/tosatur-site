@@ -1,122 +1,160 @@
 body {
-    background-color: #080808;
+    background-image: url(jungle-tiny.webp);
+    background-repeat: fill;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    margin: 0;
     font-family: monospace;
-    color: #a1a1a1;
-    padding: 6px 8px 6px 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.sidenav {
-    position: relative;
+#main-container {
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    color: #d7d7d7;
+    margin: auto;
+    border: 1px solid #d7d7d7;
+    overflow: hidden;
+    max-width: 1200px;
+    min-width: 550px;
+    line-height: 2em;
+    box-shadow: 30px 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+#topbar {
+    border-bottom: 3px double #d7d7d7;
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.topbar-container {
+    display: inline-block;
+    border-left: 1px solid #d7d7d7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topbar-rightmost {
+    border-right: 1px solid #d7d7d7;
+}
+
+.webring {
+    float: right;
+}
+
+.webring:hover {
+    background-color: #d7d7d7 !important;
+}
+
+.webring:hover img {
+    filter: invert(100%) brightness(0%);
+}
+
+#content-container {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #d7d7d7 transparent;
+}
+
+#content {
+    padding-bottom: 10%;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    background-color: #d7d7d7;
+    color: black;
+    font-size: 24px;
+    font-weight: 100;
+    padding-left: 10px;
+    border-bottom: 8px double black;
+    text-transform: uppercase;
+}
+
+h1::before {
+    content: ">> ";
+}
+
+h2 {
+    background-color: #d7d7d7;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+h2::before {
+    content: "#";
+    padding-right: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+a.navlink {
+    text-decoration: none;
+    color: #d7d7d7;
+    display: inline-block;
+}
+
+a.navlink:hover {
+    color: black;
+    background-color: #d7d7d7;
+}
+
+a.webring:hover {
+    text-decoration: none;
+    color: #d7d7d7;
+    background-color: black;
+}
+
+a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: lightgreen;
+}
+
+blockquote {
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.img-wide, figure img {
     width: 100%;
     height: auto;
 }
 
-.sidenav a {
-    text-decoration: none;
-    padding: 6px 8px 6px 16px;
-    color: inherit;
-    display: block;
+ul {
+    list-style-type: square;
 }
 
-a {
-    text-decoration: underline;
-    color: #a1a1a1;
-    font-size: 2.5rem;
-}
-
-a:hover {
-    color: #f1f1f1;
-}
-
-h1 {
-    font-size: 3.126rem;
-}
-
-h2 {
-    font-size: 2.75rem;
-}
-
-.main img {
-    max-width: 130%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media only screen and (orientation: portrait) {
-    p, li, date, blockquote {
-        font-size: 2.5rem;
-    }
-
-    blockquote {
-        border-left: 6px solid #a1a1a1;
-        padding-left: 1rem;
-    }
-
-    .sidenav a {
-        display: inline-block;
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    body {
-        margin: 0;
-    }
-    
-    a {
-        font-size: 20px;
-    }
-
-    .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        z-index: 1;
-    }
-
-    .sidenav h1 {
-        padding: 6px 8px 6px 16px;
-    }
-
-    .main {
-        margin-left: 160px;
-        padding: 0 8px 6px 16px;
-        width: 80ch;
-    }
-
-    .main h1 { 
-        padding-top: 4px;
-    }
-
-    p {
-        font-size: 1.25rem;
-        margin-bottom: 25px;
-    }
-
-    h1 {
-        font-size: 1.563rem;
-    }
-
-    h2 {
-        font-size: 1.375rem;
-    }
-
-    blockquote {
-        border-left: 3px solid #a1a1a1;
-        padding-left: 1rem;
-        font-size: 1.25rem;
-    }
-
-    li {
-        font-size: 1.25rem;
-        margin-bottom: 5px;
-    }
-
-    date {
-        font-size: 1.25rem;
-    }
+figure {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
 }
