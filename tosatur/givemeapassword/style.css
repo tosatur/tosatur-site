@@ -1,26 +1,19 @@
-body, button {
-    background-color: #111;
-    color: #a1a1a1;
-    font-family: 'consolas';
-    text-align: center;
-}
-
-body {
-    padding: 6px 8px 6px 16px;
-    margin: 0 20%;
-}
-
 #password {
     padding: 50px;
-    border: 1px solid #a1a1a1;
+    border: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 40px;
 }
 
 button {
-    border: 1px solid #a1a1a1;
+    font-family: monospace;
+    border: 1px solid #d7d7d7;
     padding: 10px 20px;
     font-size: 16px;
     display: inline-block;
     text-decoration: none;
+    background-color: black;
+    color: #d7d7d7;
 }
 
 button:hover {
@@ -28,6 +21,6 @@ button:hover {
 }
 
 button:active {
-    background-color: #a1a1a1;
-    color: #111;
+    background-color: #d7d7d7;
+    color: black;
 }
