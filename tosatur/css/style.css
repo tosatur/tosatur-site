@@ -156,6 +156,11 @@ figure {
     margin-bottom: 30px;
 }
 
+body::selection {
+    background-color: lightgreen;
+    color: black;
+}
+
 
 @media screen and (max-device-width: 480px) {
     #main-container {
