@@ -156,9 +156,9 @@ figure {
     margin-bottom: 30px;
 }
 
-body::selection {
-    background-color: lightgreen;
-    color: black;
+#main-container::selection {
+    background-color: lightgreen !important;
+    color: black !important;
 }
 
 
