@@ -54,3 +54,10 @@ function getpassword() {
 }
 
 getpassword();
+
+document.getElementById("password").addEventListener("click", copypassword);
+
+function copypassword() {
+    var copyText = document.getElementById("password");
+    navigator.clipboard.writeText(copyText.innerHTML);
+}
