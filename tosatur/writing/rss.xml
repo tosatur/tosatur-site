@@ -3,11 +3,18 @@
 
   <channel>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <lastbuilddate>2024-09-05</lastbuilddate>
+    <lastbuilddate>2024-12-24</lastbuilddate>
     <language>en-us</language>
     <title>tosatur.com</title>
     <link>https://tosatur.com</link>
     <description>tosatur's web area</description>
+
+    <item>
+      <title>2 Japan stories</title>
+      <link>https://tosatur.com/writing/2-japan-stories.html</link>
+      <description>Three employees joined in, gesturing animatedly and stumbling through fragmented English.</description>
+      <pubDate>2024-12-24</pubDate>
+    </item>
 
     <item>
       <title>Linguistic misconceptions</title>
