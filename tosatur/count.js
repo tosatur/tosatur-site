@@ -3,6 +3,8 @@
 ;(function() {
 	'use strict';
 
+	window.goatcounter = {endpoint: 'https://tosatur.goatcounter.com/count'}
+
 	if (window.goatcounter && window.goatcounter.vars)  // Compatibility with very old version; do not use.
 		window.goatcounter = window.goatcounter.vars
 	else
