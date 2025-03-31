@@ -3,11 +3,18 @@
 
   <channel>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <lastbuilddate>2024-12-24</lastbuilddate>
-    <language>en-us</language>
+    <lastbuilddate>2024-03-31</lastbuilddate>
+    <language>en-au</language>
     <title>tosatur.com</title>
     <link>https://tosatur.com</link>
     <description>tosatur's web area</description>
+
+    <item>
+      <title>STOP PRINTING</title>
+      <link>https://tosatur.com/writing/stop-printing.html</link>
+      <description>Printing is a plague on modern work culture, a relic from an era when people thought paper was the pinnacle of human achievement.</description>
+      <pubDate>2024-03-31</pubDate>
+    </item>
 
     <item>
       <title>2 Japan stories</title>
