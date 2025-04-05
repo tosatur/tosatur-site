@@ -59,7 +59,7 @@ body {
 #content-container {
     padding: 10px;
     overflow-y: scroll;
-    height: inherit;
+    height: 100%;
     padding-left: 20%;
     padding-right: 20%;
     font-size: large;
