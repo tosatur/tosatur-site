@@ -3,11 +3,18 @@
 
   <channel>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <lastbuilddate>2024-03-31</lastbuilddate>
+    <lastbuilddate>2025-05-10</lastbuilddate>
     <language>en-au</language>
     <title>tosatur.com</title>
     <link>https://tosatur.com</link>
     <description>tosatur's web area</description>
+
+    <item>
+      <title>Three monkeys and a mild realisation</title>
+      <link>https://tosatur.com/writing/three-monkeys-and-a-mild-realisation.html</link>
+      <description>As I walked away, apes in hand, I realised that I had just parted with the equivalent of two decent meals for some monkeys.</description>
+      <pubDate>2025-05-10</pubDate>
+    </item>
 
     <item>
       <title>STOP PRINTING</title>
