@@ -69,6 +69,8 @@ body {
 
 #content {
     padding-bottom: 10%;
+    background-image: url(dither-bg.png);
+    background-repeat: repeat-x;
 }
 
 h1 {
@@ -135,6 +137,7 @@ a:hover {
 blockquote {
     padding: 10px;
     border: 1px solid #d7d7d7;
+    background-color: black;
 }
 
 img {
@@ -160,7 +163,6 @@ figure {
     background-color: lightgreen !important;
     color: black !important;
 }
-
 
 @media screen and (max-device-width: 480px) {
     #main-container {
