@@ -9,6 +9,12 @@
     <link>https://tosatur.com</link>
     <description>Tosatur's web area</description>
 
+    <image>
+    <url>https://tosatur.com/images/logo-large.png</url>
+    <title>Tosatur.com logo</title>
+    <link>https://tosatur.com</link>
+  </image>
+
     <item>
       <title>Propaganda</title>
       <link>https://tosatur.com/writing/propaganda.html</link>
