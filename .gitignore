@@ -70,3 +70,6 @@ compress.bat
 
 # conlang word file
 word
+
+#aseprite files
+*.aesprite
