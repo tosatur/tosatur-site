@@ -3,11 +3,18 @@
 
   <channel>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <lastbuilddate>2025-05-10</lastbuilddate>
+    <lastbuilddate>2025-05-23</lastbuilddate>
     <language>en-au</language>
     <title>tosatur.com</title>
     <link>https://tosatur.com</link>
-    <description>tosatur's web area</description>
+    <description>Tosatur's web area</description>
+
+    <item>
+      <title>Propaganda</title>
+      <link>https://tosatur.com/writing/propaganda.html</link>
+      <description>The following artworks were discovered on a USB drive in a drawer in Argentina, the coordinates of which were hidden deep within the archives of a long-defunct Albanian numismatists' forum.</description>
+      <pubDate>2025-05-23</pubDate>
+    </item>
 
     <item>
       <title>Three monkeys and a mild realisation</title>
@@ -80,7 +87,7 @@
     </item>
 
     <item>
-      <title>on herbal medicine</title>
+      <title>On herbal medicine</title>
       <link>https://tosatur.com/writing/onherbalmedicine.html</link>
       <description>My thoughts on herbal medicine</description>
       <pubDate>2023-01-02</pubDate>
