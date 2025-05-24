@@ -13,7 +13,8 @@
             <div id="content-container">
                 <div id="content">
                     <h1>SITEMAP</h1>
-                    <ul>
+                    <p>There are currently <span id="page-counter">...</span> pages on <a href="https://tosatur.com">tosatur.com.</a></p>
+                    <ul id="page-list">
                         <li><a href="writing/2-japan-stories.html">/2-japan-stories</a></li>
                         <li><a href="404.html">/404</a></li>
                         <li><a href="games/ahmos.html">/ahmos</a></li>
@@ -47,11 +48,11 @@
                         <li><a href="music/dukeellington.html">/dukeellington</a></li>
                         <li><a href="music/dukeellington2.html">/dukeellington2</a></li>
                         <li><a href="games/elevatorgame.html">/elevatorgame</a></li>
-                        <li><a href="writing/fountains.html">/fountains</a></li>
                         <li><a href="software/fishbot.html">/fishbot</a></li>
-                        <li><a href="games/index.html">/games</a></li>
+                        <li><a href="writing/fountains.html">/fountains</a></li>
                         <li><a href="software/gedcard.html">/gedcard</a></li>
                         <li><a href="givemeapassword/index.html">/givemeapassword</a></li>
+                        <li><a href="games/index.html">/games</a></li>
                         <li><a href="index.html">/index</a></li>
                         <li><a href="writing/insidiousfiles.html">/insidiousfiles</a></li>
                         <li><a href="writing/journeytoikea.html">/journeytoikea</a></li>
@@ -59,7 +60,11 @@
                         <li><a href="photography/josephinefalls.html">/josephinefalls</a></li>
                         <li><a href="languages/index.html">/languages</a></li>
                         <li><a href="writing/linguisticmisconceptions.html">/linguisticmisconceptions</a></li>
-                        <li><a href="music/untitlednewep.html">/untitlednewep</a></li>
+                        <li><a href="games/mitchnolan100.html">/mitchnolan100</a></li>
+                        <li><a href="games/mitchnolan31.html">/mitchnolan31</a></li>
+                        <li><a href="games/mitchnolanbrawl.html">/mitchnolanbrawl</a></li>
+                        <li><a href="games/nolanfps.html">/nolanfps</a></li>
+                        <li><a href="now/index.html">/now</a></li>
                         <li><a href="software/penisafrica.html">/penisafrica</a></li>
                         <li><a href="phonetic/index.html">/phonetic</a></li>
                         <li><a href="photography/portmelbourne.html">/portmelbourne</a></li>
@@ -68,25 +73,24 @@
                         <li><a href="writing/radaris.html">/radaris</a></li>
                         <li><a href="photography/seasia.html">/seasia</a></li>
                         <li><a href="sitemap.html">/sitemap</a></li>
-                        <li><a href="writing/stop-printing.html">/stop-printing</a></li>
-                        <li><a href="writing/three-monkeys-and-a-mild-realisation.html">/three-monkeys-and-a-mild-realisation</a></li>
-                        <li><a href="games/mitchnolan100.html">/mitchnolan100</a></li>
-                        <li><a href="games/mitchnolan31.html">/mitchnolan31</a></li>
-                        <li><a href="games/mitchnolanbrawl.html">/mitchnolanbrawl</a></li>
-                        <li><a href="games/nolanfps.html">/nolanfps</a></li>
-                        <li><a href="now/index.html">/now</a></li>
                         <li><a href="software/speak.html">/speak</a></li>
                         <li><a href="games/soytopia.html">/soytopia</a></li>
+                        <li><a href="writing/stop-printing.html">/stop-printing</a></li>
                         <li><a href="test.html">/test</a></li>
                         <li><a href="writing/thetower.html">/thetower</a></li>
+                        <li><a href="writing/three-monkeys-and-a-mild-realisation.html">/three-monkeys-and-a-mild-realisation</a></li>
                         <li><a href="music/tonguelife.html">/tonguelife</a></li>
                         <li><a href="travel-map.html">/travel-map</a></li>
-                        <li><a href="music/whygoyinside.html">/whygoyinside</a></li>
+                        <li><a href="music/untitlednewep.html">/untitlednewep</a></li>
                         <li><a href="why-tosatur.html">/why-tosatur</a></li>
+                        <li><a href="music/whygoyinside.html">/whygoyinside</a></li>
                         <li><a href="games/woodboy.html">/woodboy</a></li>
                         <li><a href="software/writing.html">/writing</a></li>                        
                 </div>
             </div>
         </div>
     </body>
+    <script>
+        document.getElementById("page-counter").innerHTML = document.getElementById("page-list").getElementsByTagName("li").length;
+    </script>
 </html>
