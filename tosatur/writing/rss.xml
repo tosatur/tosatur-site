@@ -3,7 +3,7 @@
 
   <channel>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <lastbuilddate>2025-05-23</lastbuilddate>
+    <lastbuilddate>2025-06-21</lastbuilddate>
     <language>en-au</language>
     <title>Tosatur</title>
     <link>https://tosatur.com</link>
@@ -14,6 +14,13 @@
     <title>Tosatur.com logo</title>
     <link>https://tosatur.com</link>
   </image>
+
+    <item>
+      <title>When</title>
+      <link>https://tosatur.com/writing/when.html</link>
+      <description>Some reviewer claimed to have lain there in sublime contemplation before guilt drove them off; something about not wanting to look down upon the townsfolk.</description>
+      <pubDate>2025-06-21</pubDate>
+    </item>
 
     <item>
       <title>Propaganda</title>
